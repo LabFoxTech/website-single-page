@@ -1,0 +1,201 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* CSS Document */
+
+body {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 1.2;
+    /* background:#000; */
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+li,
+form,
+iframe,
+button {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*** Common Styles ***/
+
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+a:hover {
+    color: #FFC305;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.clear {
+    clear: both;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1170px;
+    margin:0 auto;
+    padding:2rem 0;
+    position:relative
+}
+@media screen and (max-width:1170px){
+    .wrapper{
+        width:95%
+    }
+}
+
+/*** titles Styles ***/
+
+h1 {
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    /* color:#DE4013; */
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    /* color:#fff !important; */
+}
+p{
+    /* color:#fff !important */
+}
+.orange{
+    color:#E55C16;
+}
+#banner{width:100%;background: #fff  no-repeat center center/cover;display:block;padding-bottom: 7rem;height:100vh;background-attachment: fixed;}
+header {display:flex;justify-content: space-between;padding:20px 0;align-items: center;}
+header .logo img{width:180px}
+header .menu li{display:inline-block;margin-left: 10px;}
+header .menu li a{padding:10px;font-size: 15px;color:#000;font-weight: 600;}
+
+#banner .banner{width:100%;display:block}
+#banner .banner .banner-inner{width:100%;display:block;margin-top: 6rem;}
+#banner .banner .banner-inner .head-1{font-size: 46px;color:#000;font-weight: 600;}
+#banner .banner .banner-inner .head-1 span{color:#E55C16}
+#banner .banner .banner-inner .head-2{font-size: 28px;color:#000;margin:2rem 0 2rem 0;font-weight: 300;}
+#banner .banner .banner-inner .button-style-1{border-radius: 26px;padding:10px 55px 10px 0;border:none;font-size: 17px;color:#000;text-transform: uppercase;background:transparent;}
+
+
+#our-portfolio{width:100%;background-color: transparent;display:block;position:relative;height:100vh;}
+#our-portfolio .slider{width:100%}
+#our-portfolio .slider-inner{display: flex;justify-content: space-between;}
+#our-portfolio .slider-inner h3{color:#fff;font-size: 38px;font-weight: 300;}
+#our-portfolio .slider-inner h2{color:#DE4013;font-size: 38px;margin-bottom: 100px;font-weight: 500;}
+#our-portfolio .slider-inner h4{color:#fff;font-size: 30px;font-weight: 600;}
+#our-portfolio .slider-inner p{color:#fff;font-size: 22px;margin-top:20px;margin-bottom:40px}
+#our-portfolio .slider-inner a.rm{color:#DE4013;font-size: 17px;font-weight: 500;}
+#our-portfolio .left-portfolio,
+#our-portfolio .right-portfolio{
+    width: 50%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: rgba(0,0,0,0.5);
+color: #fff !important;
+padding: 30px;
+}
+@media screen and (max-width:639px) {
+    #our-portfolio .left-portfolio{
+        width:100%
+    }
+}
+#our-portfolio .right-portfolio{padding-right:50px}
+#our-portfolio .right-portfolio a.rm{float:right}
+#our-portfolio .bullets-porrtfolio{position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+#our-portfolio .bullets-porrtfolio li{width: 9px;height: 9px;background: #de4013;opacity:0.16;border-radius: 50%;margin-bottom: 20px;border:1px solid #de4013;}
+#our-portfolio .bullets-porrtfolio li.active{background: #de4013;opacity:1}
+
+#our-portfolio .swiper-container,
+#our-portfolio .swiper-wrapper,
+#our-portfolio .swiper-slide{
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+}
+#our-portfolio .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   /* Center slide text vertically */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+#work-togther{width:100%;background-color: transparent;display:block;padding:5rem 0}
+#work-togther .wt-inner {text-align: left;}
+#work-togther .wt-inner h3{color:#000;font-size: 38px;font-weight: 300;}
+#work-togther .wt-inner h2{color:#000;font-size: 38px;font-weight: 500;}
+#work-togther .wt-all{display:flex;justify-content: space-between;margin-top: -50px;}
+#work-togther .wt-boxs{display:flex;justify-content: center;align-items: center;flex-direction: column;width:300px}
+#work-togther .wt-box{width:100%}
+#work-togther .wt-box.mb-true{margin-bottom: 50px;}
+#work-togther .wt-icon{width:100%}
+#work-togther .wt-icon img{width:100%}
+#work-togther .wt-head{font-weight: 500;color:#fff;background:#000;font-size: 22px;padding:10px;width:100%;text-transform: uppercase;text-align: center;}
+#work-togther .wt-head span{font-weight: 100;}
+#work-togther .wt-head.active{color:#fff;background:#DE4013;}
+
+
+#lets-talk{width:100%;background-color: #fff;display:block;color:#000;padding-bottom: 0;}
+
+#lets-talk .lt-inner{display: flex;justify-content: space-between;padding-bottom:2rem;flex-direction: column;}
+#lets-talk  h2{color:#000;font-size: 38px;text-align: center;margin-bottom: 35px;font-weight: 500;font-weight: 700;}
+#lets-talk .lt-left,
+#lets-talk .lt-right{width:100%;padding:20px}
+#lets-talk .form-control input,#lets-talk .form-control textarea,#lets-talk .form-control select{width:100%;padding:15px 15px;border-radius: 6px;margin-bottom:15px;border:none}
+#lets-talk .form-control button{width:100%;background: #E55C16 0% 0% no-repeat padding-box;border-radius: 6px;padding:10px 15px;border: none;font-size: 17px;color: #000;text-transform: uppercase;text-align: center;}
+#lets-talk .lt-about{font-size: 18px;margin-bottom: 55px;}
+#lets-talk .lt-email{font-size: 20px;margin-bottom: 20px;}
+#lets-talk .lt-number{font-size: 20px;}
+#lets-talk .lt-smo{margin-top: 70px;}
+#lets-talk .lt-smo ul{display: flex;justify-content: flex-start;}
+#lets-talk .lt-smo li{margin-right: 70px;}
+#lets-talk .lt-smo li img{max-width: 20px;max-height: 20px;}
+#lets-talk footer{display: flex;justify-content: space-between;width:100%;align-items: center;padding-top:2rem;border-top:1px solid #000}
+#lets-talk .footer-logo img{width:180px}
+#lets-talk .footer-logo span{display:block}
+#lets-talk .footer-menu ul{display: flex;justify-content: space-between;}
+#lets-talk .footer-menu li{display:inline-block;margin-left: 10px;}
+#lets-talk .footer-menu li a{padding:10px;font-size: 15px;color:#fff}

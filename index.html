@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Mobile Metas -->
+    <title>Labfox</title>
+    <meta name="description" content="Labfox">
+    <meta name="keywords" content="Labfox" />
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <section id="banner">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a><img src="assets/images/logo.png" /></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#banner">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="banner">
+                <div class="banner-inner">
+                    <div class="head-1" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInUp animated;">Let's
+                        <span class="theme-orange">build,</span> <br> Together</div>
+                    <div class="head-2" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInUp animated;">
+                        <span class="orange">Labfox</span> is an experimental <span class="orange">startup
+                            studio</span>, <br>
+                        built to <span class="orange">empower</span> all sizes of startups to scale <br>
+                        <span class="orange">products</span> and <span class="orange">tech teams</span>. By utilizing
+                        global</br> talent and entrepreneurship.
+                    </div>
+
+                    <button class="button-style-1"
+                        data-anijs="if: onRunFinished, on: $AniJSNotifier, do: fadeInUp animated;">Check out a few of
+                        our portfolio startups...</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="our-portfolio">
+        <div class="swiper-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('assets/images/banner1.png')">
+                    <div class="slider-inner">
+                        <div class="left-portfolio">
+
+                            <h2>Gritly</h2>
+                            <p>Gritly is a career Kickstarter bootcamp program, focused on enabling diverse communities
+                                into entry-level roles, starting with tech sales.</p>
+                            <a class="rm">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image:url('assets/images/banner2.png')">
+                    <div class="slider-inner">
+                        <div class="left-portfolio">
+
+                            <h2>Sarus</h2>
+
+                            <p>Sarus was founded in 2021 to Make Safety Easy for the construction industry. They are
+                                tackling this challenge by first streamlining the lift planning process for crane
+                                companies and construction companies.</p>
+                            <a class="rm">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image:url('assets/images/banner3.png')">
+                    <div class="slider-inner">
+                        <div class="left-portfolio">
+
+                            <h2>Bon Voyaz</h2>
+                            <p>Bon Voyaz is your one stop-app that helps you manage all of your trips. It assists with
+                                your Bookings, Restaurants, Budget, Itinerary, and more.</p>
+                            <a class="rm">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+       
+    </section>
+
+
+    
+    
+    <section id="lets-talk">
+        <div class="wrapper">
+            
+            <!-- <h2>LET’S TALK</h2> -->
+            <h2 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal ">We are launching soon. <br>
+                Can't wait to scale your startup? <br>
+                Get in touch.</h2>
+            <div class="lt-inner">
+                <div class="lt-left">
+                    <form>
+                        <div class="form-control">
+                            <label></label>
+                            <input placeholder="Email" type="email">
+                        </div>
+                        <div class="form-control">
+                            <label></label>
+                            <select>
+                                <option>Subject</option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <textarea placeholder="Write Your Message Here..."></textarea>
+                        </div>
+                        <div class="form-control">
+                            <button type="submit" class="theme-orange">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+                <footer>
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png">
+                        <span>© 2022 Labfox Pvt LTD. All rights reserved
+                            Made with ❤️ from earth 🌏</span>
+                    </div>
+                    <!-- <div class="footer-menu">
+                    <ul>
+                        <li><a>About Us</a></li>
+                        <li><a>Team</a></li>
+                        <li><a>Work</a></li>
+                        <li><a>Blogs</a></li>
+                    </ul>
+                </div> -->
+                </footer>
+            </div>
+    </section>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script>
+        
+        const swiper = new Swiper('.swiper', {
+
+            direction: 'vertical',
+            loop: true,
+              mousewheelControl: true,
+            // pagination: {
+               // el: '.swiper-pagination',
+            //},
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+          //  scrollbar: {
+           //     el: '.swiper-scrollbar',
+           // },
+        });
+    </script>
+</body>
+
+</html>
